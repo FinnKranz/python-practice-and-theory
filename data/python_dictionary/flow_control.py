@@ -25,3 +25,17 @@ def logical_operators():
     print("False ", not condition_one)
     #Description
     #three main logical operators for connecting booleans
+
+def while_loop():
+    i = 0
+    while i < 5:
+        print(i)
+        i += 1
+    #Description
+    #do a certain action while a condition is true
+
+def for_loop():
+    for i in range(5):
+        print(i)
+    #Description
+    #do a certain action for a certain number of times

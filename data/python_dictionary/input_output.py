@@ -7,6 +7,7 @@ def print_to_console():
 
 def input_from_console():
     text = input("Enter your name: ")
+    print(text)
     #Description
     #asking for input from the console
 
