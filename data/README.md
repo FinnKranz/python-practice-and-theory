@@ -11,4 +11,5 @@ fundamental_theory:
 - theoretical foundations in mathematics, data science, and machine learning
 
 course_related_projects:
-- contains small projects related to the online Python course “100 Days of Code: The   Complete Python Pro Bootcamp”
+- contains small projects related to the online Python course “100 Days of Code: The Complete Python Pro Bootcamp”
+- the numbering of the individual projects does not correspond to the numbering in the online course

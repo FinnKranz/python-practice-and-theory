@@ -20,9 +20,12 @@ def logical_operators():
     condition_one = True
     condition_two = False
 
-    print("False: ",condition_one and condition_two)
-    print("True: ",condition_one or condition_two)
-    print("False ", not condition_one)
+    operators= {
+        "and": condition_one and condition_two,
+        "or": condition_one or condition_two,
+        "not": not condition_one
+    }
+
     #Description
     #three main logical operators for connecting booleans
 

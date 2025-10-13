@@ -13,6 +13,5 @@ def list_type():
     example_list[1] = "NewElement"
     example_list.append("NewElement")
     example_list.extend(["NewElement", "NewElement"])
-
     #Description
     #most important methods and workflows for lists
