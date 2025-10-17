@@ -49,4 +49,17 @@ def range_function ():
     #Description
     #ways to create a range
 
+def find_max_and_min():
+    list_of_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    dictionary = {"NumberOne": 1, "NumberTwo": 2, "NumberThree": 3}
+    operations = {
+        "max_list": max(list_of_number),
+        "min_list": min(list_of_number),
+        "max_dict": max(dictionary.items()), #key and item
+        "min_dict": min(dictionary.items()),  # key and item
+        "max_dict2": max(dictionary, key=dictionary.get), #key
+        "min_dict2": min(dictionary, key=dictionary.get), #key
+    }
+    #Description
+    #ways to find the max and min of a list or dictionary
 

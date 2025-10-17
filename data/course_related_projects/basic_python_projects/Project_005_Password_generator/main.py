@@ -19,7 +19,6 @@ def main ():
 
 def generate_custom_password ():
     password_list = []
-    print("")
     number_of_characters = int(input("How many characters do you want your password to have?"))
     number_of_numbers = int(input("How many numbers do you want in your password?"))
     number_of_symbols= int(input("How many special characters do you want in your password?"))

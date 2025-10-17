@@ -52,3 +52,23 @@ def convert_case_string ():
     }
     #Description
     #convert a string to lowercase
+
+def base64_encoding_decoding ():
+    import base64
+    #from byte array to string
+    encoded_string = base64.b64encode(b"Hello World")
+    #from string to byte array
+    decoded_string = base64.b64decode(encoded_string)
+
+    #Description
+    #convert a string to lowercase
+
+def bytes_to_string():
+    bytes_string = b"Iam a byte string"
+    standard_string = bytes_string.decode()
+
+
+def doc_string():
+    """This is a doc string"""
+    #Description
+    #binds a description to the function
