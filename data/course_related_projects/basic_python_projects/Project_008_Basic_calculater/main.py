@@ -24,6 +24,18 @@ operations = {
     "/": divide,
 }
 
+def get_operation_symbol():
+    for symbol in operations:
+        print(symbol)
+    return input("Pick an operation: ")
+
+def get_continue_decision(answer):
+    message = f"Choose an option:\n"
+    message += f"1 - Continue calculating with {answer}\n"
+    message += "2 - Start a new calculation\n"
+    message += "q - Quit"
+    return input(message)
+
 
 def little_calculator():
     print(art.logo)
@@ -31,9 +43,7 @@ def little_calculator():
     number_one = get_number_from_user()
 
     while should_continue:
-        for symbol in operations:
-            print(symbol)
-        operation_symbol = input("Pick an operation: ")
+        operation_symbol = get_operation_symbol()
         if operation_symbol not in operations:
             print("Invalid operation symbol")
             continue
@@ -46,12 +56,7 @@ def little_calculator():
             return False
         print(f"{number_one} {operation_symbol} {number_two} = {answer}")
 
-        message = f"Choose an option:\n"
-        message += f"1 - Continue calculating with {answer}\n"
-        message += "2 - Start a new calculation\n"
-        message += "q - Quit"
-        decision = input(message)
-
+        decision = get_continue_decision(answer)
         match decision:
             case "1":
                 number_one = answer
